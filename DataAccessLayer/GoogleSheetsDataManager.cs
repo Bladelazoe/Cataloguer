@@ -196,6 +196,11 @@ namespace DataAccessLayer
             }
             SheetId = id.ToString();
         }
+
+        public void DeleteData(string id)
+        {
+           
+        }
     }
 }
 

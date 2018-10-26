@@ -13,6 +13,9 @@ namespace DataAccessLayer
 
         void UpdateData(string id, object catalogueItem);
 
+        //Justins Code
+        void DeleteData(string id);
+
         IList<IList<object>> GetAllData();
 
         void Configure();
