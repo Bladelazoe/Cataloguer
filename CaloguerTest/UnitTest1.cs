@@ -55,8 +55,10 @@ namespace CaloguerTest
                 throw new Exception();
             }
 
-            
-            Assert.IsNotNull(response);
+            catalogueActions.DeleteRecord(id);
+            response = catalogueActions.GetRecordById(id);
+
+            Assert.IsNull(response);
         }
 
         //getAll

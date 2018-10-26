@@ -73,7 +73,23 @@ namespace CaloguerTest
         public void DeleteData(string id)
         {
 
-            throw new NotImplementedException();
+            IList<object> ItemToDelete = null;
+
+            // Find Item
+            foreach (var item in TestList)
+            {
+                string searchId = item[0].ToString();
+                if (id == searchId)
+                {
+                    ItemToDelete = item;
+                    break;
+                }
+            }
+            if (ItemToDelete != null)
+            {
+                TestList.Remove(ItemToDelete);
+            }
+            
         }
 
         private List<T> Convert<T>(IList<IList<object>> sheetData)
