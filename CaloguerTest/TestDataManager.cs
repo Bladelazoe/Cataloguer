@@ -54,5 +54,10 @@ namespace CaloguerTest
         {
             throw new NotImplementedException();
         }
+
+        public void DeleteData(string id)
+        {
+            throw new NotImplementedException();
+        }
     }
 }
