@@ -8,5 +8,7 @@ namespace BusinessObjectLayer
         bool IsApplicationReady();
         CatalogueRecord AddRecord(string description);
         CatalogueRecord GetRecordById(string id);
+
+        void DeleteRecord(string id);
     }
 }
